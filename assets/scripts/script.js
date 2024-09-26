@@ -1,6 +1,7 @@
 function handleTriangle() {
   const container = document.getElementById("container");
   container.innerHTML = "";
+  document.getElementById("result").innerHTML = "";
   const baseField = document.createElement("div");
   baseField.setAttribute("class", "field");
 
@@ -41,13 +42,14 @@ function handleTriangle() {
     const base = Number(document.getElementById("base").value);
     const height = Number(document.getElementById("height").value);
     const result = document.getElementById("result");
-    result.innerHTML = `<p>The Area Of rectangle is ${0.5 * base * height}</p>`;
+    result.innerHTML = `<p>The Area Of Triangle is ${0.5 * base * height}</p>`;
   };
 }
 
 function handleRectangle() {
   const container = document.querySelector("#container");
   container.innerHTML = "";
+  document.getElementById("result").innerHTML = "";
   const lengthField = document.createElement("div");
   lengthField.setAttribute("class", "field");
 
@@ -89,13 +91,14 @@ function handleRectangle() {
     const length = Number(document.getElementById("length").value);
     const width = Number(document.getElementById("width").value);
     const result = document.getElementById("result");
-    result.innerHTML = `<p>The Area Of Triangle is ${length * width}</p>`;
+    result.innerHTML = `<p>The Area Of Rectangle is ${length * width}</p>`;
   };
 }
 
 function handleCircle() {
   const container = document.querySelector("#container");
   container.innerHTML = "";
+  document.getElementById("result").innerHTML = "";
   const radiusField = document.createElement("div");
   radiusField.setAttribute("class", "field");
 
